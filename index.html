@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Damian Gonzalez | Information Systems Minor Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #172a3a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #0f1c27;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #66c7f2;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #172a3a;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #66c7f2;
+            padding-bottom: 5px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            list-style: none;
+        }
+
+        .skills li {
+            background-color: #e9f3f8;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            color: #172a3a;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #1769aa;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #172a3a;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Damian Gonzalez</h1>
+        <p>Information Systems Minor Student | University of Utah</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am an Information Systems Minor student at the University of Utah
+                interested in using technology and data to solve business
+                problems. My career interests include information systems, and technology.
+              I am mainly interested in Cybersecurity since I like solving security issues.
+               
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ul class="skills">
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <div class="project">
+                    <h3>App development</h3>
+                    <p>
+                       Developed an app of my choice it was a voice speaker
+                      you type in something and it will say it
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Connect 4</h3>
+                    <p>
+                       Made a broken but functioning connect 4 game. The colors were broken.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Movie status</h3>
+                    <p>
+                        Made a code program that will tell you the information of a movie and rating
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>Rock paper scissors</h3>
+                    <p>
+                        Made a rockpaper scissors game, you play against an Ai.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+
+            <p>Resume coming soon.</p>
+
+        </section>
+
+  
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+
+            <p>
+                <strong>u1404210@utah.edu:</strong>
+                <a href="mailto:your.email@utah.edu">
+                    u1404210l@utah.edu
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/yourusername" target="_blank">
+                    github.com/damiangonzalez.github.io
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Damian Gonzalez. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
